@@ -59,9 +59,17 @@ public class HomeController {
 	
 	//GO TO CHECK IN PAGE
 	@RequestMapping("/homePage")
-	public String homePage(){
-		
-		return "homePage";
+	public String homePage(Model model){
+		if (user != null){
+			if (user.getUsername() != null){
+				if(userDao.checkedIn(user)) {
+					return goToHome(model, user);
+				}else {
+					return "homePage";
+				}
+			}
+		}
+		return "index";
 	}
 	
 	//REMOVE CURRENT USER

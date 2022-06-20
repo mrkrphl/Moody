@@ -110,7 +110,7 @@ public class UserDaoImpl implements UserDao {
 	}
 	
 	public List<Mood> listOfMoods(User user){
-		String sql = "SELECT * FROM moods WHERE user_id = '" +user.getUserId()+"'";
+		String sql = "SELECT * FROM moods WHERE user_id = '" +user.getUserId()+"' ORDER BY date ASC";
 		System.out.print(sql);
 		return jdbcTemplate.query(sql, new MoodMapper());
 	}
