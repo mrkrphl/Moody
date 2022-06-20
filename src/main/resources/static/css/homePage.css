@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+body{
+    font-family: Helvetica, Tahoma, sans-serif;
+    background: white;  
+    background: -webkit-linear-gradient(to left, white, grey);
+}
+body::-webkit-scrollbar{
+    visibility: hidden;
+}
+.container{
+    position:absolute;
+    top: 2%;
+    width: 100%;
+}
+.greeting{
+    text-align: center;
+}
+.info{
+    margin: auto;
+    display: block;
+}
+input {
+    width: 300px;
+    background: 
+        linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+    border: none;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    z-index: 100;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+.inv{
+	display:none;
+}
+body {
+  color: hsla(215, 5%, 50%, 1);
+}
+h1 {
+  color: hsla(215, 5%, 10%, 1);
+  margin-bottom: 2rem;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section > div {
+  flex: 1;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.journal{
+    margin-top:2%;
+}
+
+input[type="radio"]:disabled ~ label {
+    color: hsla(150, 5%, 75%, 1);
+    border-color: hsla(150, 5%, 75%, .2);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+input[type="radio"]:not(:disabled) ~ label {
+    cursor: pointer;
+  }
+label {
+  display: block;
+  background: transparent;
+
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+}
+input[type="radio"]:checked + label {
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1);
+  box-shadow: 0px 0px 20px hsla(150, 100%, 50%, 0.75);
+}
+
+
+input[type="radio"]#control_05:hover + label {
+  background: red;
+  border-color: red;
+}
+
+input[type="radio"]:hover + label {
+  background: hsla(150, 75%, 50%, 1);
+  border-color: hsla(150, 75%, 50%, 1);
+  color:hsla(215, 0%, 100%, 1);
+}
+
+input[type="radio"]#control_05:checked + label {
+  background: red;
+  border-color: red;
+  color:hsla(215, 0%, 100%, 1);
+}
+p {
+  font-weight: 900;
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.journal{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.journal button{
+    padding-left:2%;
+    padding-right: 2%;
+    background-color: rgba(55, 165, 189, 0.3);
+    border: none;
+    box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+}
+
+button:hover{
+    background-color: rgba(55, 165, 189, 0.7);
+    cursor: pointer;
+}
+
+textarea{
+    box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+    outline:none;
+    resize: none;
+    width: 90%;
+    height: 300px;
+    font-size: 20px;
+    font-family: 'Dekko';
+    display: block;
+    border: none;
+    line-height: 50px;
+
+    padding: 11px 20px 0 20px;
+
+    background-image: -moz-linear-gradient(top , transparent, transparent 49px,#E7EFF8 0px);
+    background-image: -webkit-linear-gradient(top , transparent, transparent 49px,#E7EFF8 0);
+    -webkit-background-size:  100% 50px;
+    background-size: 100% 50px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+
+		
