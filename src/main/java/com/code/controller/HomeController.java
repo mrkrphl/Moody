@@ -253,7 +253,7 @@ public class HomeController {
 		
 		String[] ecstatic = new String[]{"Ecstatic", "Enthusiastic", "Loved", "Inspired"};
 		String[] happy = new String[]{"Happy", "Positive", "Happy", "Hopeful"};
-		String[] ok = new String[]{"OK", "Calm", "Good"};
+		String[] ok = new String[]{"OK", "Calm", "Good", "Calm"};
 		String[] sad = new String[] {"Sad", "Lonely", "Hopeless", "Sad", "Tired"};
 		String[] devastated = new String[] {"Devastated", "Angry", "Upset", "Anxious", "Stressed"};
 		String[][] categories = new String[][]{ecstatic, happy, ok, sad, devastated};
