@@ -29,7 +29,12 @@ public class HomeController {
 	public String index(Model model) {
 		if(user != null) {
 			if(user.getUsername() != null) {
-				return goToHome(model, user);
+				if(userDao.checkedIn(user)) {
+					return goToHome(model, user);
+				}else {
+					return "homePage";
+				}
+					
 			}
 		}
 		return "index";
